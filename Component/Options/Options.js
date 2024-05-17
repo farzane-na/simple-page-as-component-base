@@ -10,7 +10,7 @@ option1.innerHTML=
     <link rel="stylesheet" href="Component/Options/options.css">
     <div class="options option1">
         <div class="options__image">
-            <img src=../images/1.jpg alt="">
+            <img src="/../images/1.jpg" alt="">
         </div>
         <div class="options__caption">
             <h3 class="options__title">50% off a drink when you get the app</h3>
@@ -27,7 +27,7 @@ option2.innerHTML=
     <link rel="stylesheet" href="Component/Options/options.css">
     <div class="options option2">
         <div class="options__image">
-            <img src=../images/2.jpg alt="">
+            <img src="/../images/2.jpg" alt="">
         </div>
         <div class="options__caption option2">
             <h3 class="options__title">Summer at first sip</h3>
@@ -44,7 +44,7 @@ option3.innerHTML=
     <link rel="stylesheet" href="Component/Options/options.css">
     <div class="options option3">
         <div class="options__image">
-            <img src=../images/3.jpg alt="">
+            <img src="/../images/3.jpg" alt="">
         </div>
         <div class="options__caption">
             <h3 class="options__title">The best deals are in the app</h3>
@@ -61,7 +61,7 @@ option4.innerHTML=
     <link rel="stylesheet" href="Component/Options/options.css">
     <div class="options option4">
         <div class="options__image">
-            <img src=../images/4.jpg alt="">
+            <img src="/../images/4.jpg" alt="">
         </div>
         <div class="options__caption">
             <h3 class="options__title">When you gift, we give</h3>
@@ -78,7 +78,7 @@ option5.innerHTML=
     <link rel="stylesheet" href="Component/Options/options.css">
     <div class="options option5">
         <div class="options__image">
-            <img src=../images/5.png alt="">
+            <img src="/../images/5.png" alt="">
         </div>
         <div class="options__caption">
             <h3 class="options__title">Dads, grads & Starbucks Cards</h3>
@@ -94,7 +94,7 @@ option6.innerHTML=
     <link rel="stylesheet" href="Component/Options/options.css">
     <div class="options option6">
         <div class="options__image">
-            <img src=../images/6.jpg alt="">
+            <img src="/../images/6.jpg" alt="">
         </div>
         <div class="options__caption">
             <h3 class="options__title">“I never thought I would go to university. Starbucks has made this dream a reality.”</h3>
