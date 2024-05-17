@@ -1,0 +1,122 @@
+*::after,*::before,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #70e7b0;
+}
+.container{
+    background-color: #01723e;
+    padding: 3rem 3rem;
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-content{
+    font-family: "Freeman";
+    width: 200px;
+    flex-grow: 1;
+}
+.footer-title{
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-weight: 200;
+    transition: all 200ms linear;
+    padding: 0.5rem;
+    position: relative;
+}
+.footer-title::after , .footer-title::before{
+    content: "";
+    position: absolute;
+    background-color: #70e7b0;
+    border-radius: 10px;
+}
+.footer-title::after{
+    width: 0px;
+    height: 3px;
+    left: 0px;
+    bottom: 0;
+    transition: all 200ms linear;
+    transition-delay: 200ms;
+}
+.footer-title::before{
+    height: 0%;
+    width: 3px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 200ms linear;
+}
+.footer-title:hover::after{
+    width: 100px;
+}
+.footer-title:hover::before{
+    height: 100%;
+}
+.footer-item{
+    margin-bottom: 1rem;
+    transition: all 200ms ease-in;
+    position: relative;
+    padding: 0;
+    margin-right: 1rem;
+}
+.footer-item a{
+    font-weight: 100;
+    transition: all 200ms ease-in;
+}
+.footer-item::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #fff;
+    top: 50%;
+    transition: all 200ms ease-in;
+    left: -10px;
+}
+.footer-item:hover{
+    padding-left: 25px;
+}
+.footer-item:hover::before{
+    width: 20px;
+    left: 0px;
+}
+.social-media{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+
+}
+.social-media h4{
+    color: #fff;
+    font-family: "Freeman";
+    margin-bottom: 1.5rem;
+}
+.social-media a{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    font-size:16px;
+    transition: all 200ms ease-in;
+}
+.icons:hover{
+    font-size:20px;
+    color: #fff;
+}

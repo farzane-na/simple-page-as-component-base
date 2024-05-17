@@ -1,0 +1,154 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 90%;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3.5rem;
+    border: 3px solid #01723e;
+    border-radius: 2rem;
+    box-shadow: 0 1px 10px #01723d69;
+    margin-bottom: 3rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-item {
+    margin-right: 2rem;
+}
+
+.menu-item a {
+    font-family: "Freeman";
+    transition: all 200ms ease-in;
+    position: relative;
+}
+
+.menu-item a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #01723e;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 200ms ease-in;
+    transform: translateX(-10%);
+}
+
+.menu-item a:hover {
+    color: #01723e;
+}
+
+.menu-item a:hover::after {
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/*                  */
+.mobile-menu {
+    display: none;
+    position: relative;
+}
+
+.hamburger-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01723e;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 60%;
+    height: 3px;
+    border-radius: 1rem;
+    background-color: #fff;
+    position: relative;
+    transition: all 200ms ease-in;
+}
+
+.hamburger-menu span::after,
+.hamburger-menu span::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 1rem;
+    transition: all 200ms ease-in;
+}
+
+.hamburger-menu span::after {
+    top: 10px;
+}
+
+.hamburger-menu span::before {
+    top: -10px;
+}
+
+.nav-menu-mobile {
+    position: fixed;
+    width: 50vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #01723e;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+.menu-item-mobile {
+    margin-bottom: 2rem;
+}
+
+.menu-item-mobile a {
+    color: #fff;
+}
+
+@media(max-width:900px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
