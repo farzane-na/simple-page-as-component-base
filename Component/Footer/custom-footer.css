@@ -120,3 +120,24 @@ a{
     font-size:20px;
     color: #fff;
 }
+@media(max-width:517px){
+    .container{
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    .footer-content {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+    .footer-title{
+        width: 150px;
+        margin: 0 auto;
+    }
+    .social-media{
+        display: block;
+    }
+    .social-media h4{
+        text-align: center;
+    }
+}
