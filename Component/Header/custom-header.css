@@ -152,3 +152,8 @@ li {
         display: block;
     }
 }
+@media(max-width:527px){
+    .container{
+        padding: 1rem 1.5rem;
+    }
+}
