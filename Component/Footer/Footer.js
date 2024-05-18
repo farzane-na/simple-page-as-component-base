@@ -30,10 +30,10 @@ template.innerHTML = `
         </ul>
         <div class="social-media">
             <h4 class="footer-title">Follow Us</h4>
-            <a href="#"><i class="fa fa-instagram icons"></i></a>
-            <a href="#"><i class="fa fa-telegram icons"></i></a>
-            <a href="#"><i class="fa fa-linkedin icons"></i></a>
-            <a href="#"><i class="fa fa-facebook-f icons"></i></a>
+            <a href=""><i class="fa fa-instagram icons"></i></a>
+            <a href=""><i class="fa fa-telegram icons"></i></a>
+            <a href=""><i class="fa fa-linkedin icons"></i></a>
+            <a href=""><i class="fa fa-facebook-f icons"></i></a>
         </div>
     </div>
 `
