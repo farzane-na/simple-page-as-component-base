@@ -18,18 +18,12 @@
     flex-direction: row-reverse;
 }
 
-.option2 {
-    background-color: #0021DB;
-}
-
+.option2,
 .option3 {
     background-color: #0021DB;
 }
 
-.option4 {
-    background-color: #016343;
-}
-
+.option4,
 .option5 {
     background-color: #016343;
 }
