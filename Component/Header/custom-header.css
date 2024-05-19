@@ -125,7 +125,7 @@ li {
     position: fixed;
     width: 50vw;
     top: 0;
-    right: 0;
+    right: -50vw;
     bottom: 0;
     background-color: #01723e;
     display: flex;
@@ -133,6 +133,7 @@ li {
     align-items: center;
     flex-direction: column;
     padding: 3rem 0;
+    transition: all 200ms ease-in;
 }
 
 .menu-item-mobile {
@@ -142,7 +143,48 @@ li {
 .menu-item-mobile a {
     color: #fff;
 }
-
+.nav-menu-mobile--open .hamburger-menu-line{
+    background-color: transparent;
+}
+.nav-menu-mobile--open .hamburger-menu-line::after{
+    transform: rotate(45deg) translate(-7px,-7px);
+}
+.nav-menu-mobile--open .hamburger-menu-line::before{
+    transform: rotate(-45deg) translate(-7px,7px);
+}
+.menu-item-mobile{
+    position: relative;
+}
+.menu-item-mobile a{
+    padding-bottom: 5px;
+}
+.menu-item-mobile a::after ,.menu-item-mobile a::before{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    transition: all 200ms linear;
+}
+.menu-item-mobile a::after{
+    left: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.menu-item-mobile a::before{
+    left: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.menu-item-mobile a:hover::after{
+    left: 0;
+    width: 50%;
+}
+.menu-item-mobile a:hover::before{
+    right: 0;
+    width: 50%;
+}
 @media(max-width:900px) {
     .nav-menu {
         display: none;
