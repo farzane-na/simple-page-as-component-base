@@ -1,7 +1,6 @@
 const template = document.createElement("template")
 template.innerHTML = `
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="Component/Footer/custom-footer.css">
     <div class="container">
         <ul class="footer-content">
